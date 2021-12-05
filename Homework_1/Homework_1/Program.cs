@@ -140,7 +140,7 @@ namespace Homework_1
             for (int i = 0; i < input.Length; i++)
             {
                 symbol = input[i];
-                if (symbol == ' ') continue;
+                if (symbol == ' ' && (res == "-" || res.Length < 1)) continue;
                 else if ((symbol=='-' && res.Length == 0) || Is_valid_digit(symbol))
                 {
                     res +=symbol;
